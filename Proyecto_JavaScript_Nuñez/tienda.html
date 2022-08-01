@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto/Alberto Nuñez</title>
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    
+</head>
+<body>
+      <div>
+        <button id="darkMode"><i class="fas fa-moon"></i></button>
+      </div> 
+    <header>
+        <h1>Chukis - Ropa de Bebe</h1>
+        <!--Bucador de productos-->
+        <button id="boton-carrito">
+            <i class="fas fa-cart-arrow-down"></i>
+            <span id="contadorCarrito">0</span>
+        </button>
+        <select id="selecVariedad">
+          <option value="all">Todos los productos</option>
+          <option value="Bodys">Bodys</option>
+          <option value="Enteritos">Enteritos</option>
+          <option value="Buzos">Buzos</option>
+          <option value="Chalecos">Chalecos</option>
+          <option value="Zapatillas">Zapatillas</option>
+          <option value="Pijamas">Pijamas</option>
+      </select>
+      
+      </header>
+     
+<!--Carta-->
+    <main id="contenedor-productos">
+    
+    </main>
+
+<!--modal-->
+    <div class="modal-contenedor">
+        <div class="modal-carrito scroll">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-window-close"></i></button>
+            <p id="textoVacio"></p>
+            <div id="carrito-contenedor"></div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
+            <form method="get" action="comprar.html">
+                
+                <input type="submit" value="COMPRAR!" />  
+            </form>
+        </div>
+    
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- <script src="js/productos.json"></script> -->
+    <script src="/js/darkMode.js"></script>
+    <script src="/js/logica.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
